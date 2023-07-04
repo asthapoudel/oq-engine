@@ -35,7 +35,6 @@ def analysis(dstore):
                 for tagname in tagnames
             }
         )
-        .assign(id=lambda df: df.id.str.decode("utf-8"))
     ).set_index("id")
     
     ##Need to check.It is giving error when this is not done.
